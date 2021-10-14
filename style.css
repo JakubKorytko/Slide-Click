@@ -1,0 +1,138 @@
+.arrow {
+    margin-top:15px;
+    width: 70px;
+    float: left;
+    height: 70px;
+    margin-left: 15px;
+}
+
+.arrow:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+#timerDigits {
+    display: inline-block;
+    width: fit-content;
+    height: fit-content;
+    background-color: black;
+    padding: 5px;
+    margin: 5px;
+}
+
+.timerDigit {
+    width: 20px;
+    display: inline-block;
+    height: 25px;
+}
+
+.arrow:active {
+    filter: grayscale(100%)
+}
+
+#buttons {
+    width: 270px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#close {
+    position: absolute;
+    bottom:0;
+    left:50%;
+    margin-left: -40px;
+    width: 80px;
+    height: 50px;
+}
+
+#won_under {
+    width: fit-content;
+    height: fit-content;
+}
+
+#highscore, #won {
+    position: fixed;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 700px;
+    height: 700px;
+    left: 50%;
+    border:black 3px solid;
+    margin-left: -350px;
+    margin-top: -350px;
+    background-color: white;
+    z-index: 1;
+    top: 50%;
+}
+
+#won {
+    height: 500px;
+    width:500px;
+    margin-left: -250px;
+    margin-top: -250px;
+}
+
+#choose_image {
+    width:270px;
+    height:100px;
+}
+
+#puzzleContainer {
+    width: 640px;
+    position: relative;
+    height: 640px;
+    display: inline-block;
+    border: 3px solid black;
+}
+
+.puzzleButton, .highscoreButton {
+    padding: 5px 10px;
+    margin: 5px;
+}
+
+.arrow:first-of-type {
+    margin-right: 15px;
+    margin-left: 0;
+}
+
+#img_container {
+    position:relative;
+    float: left;
+    overflow: hidden;
+    height:100px;
+    width:100px;
+}
+
+.puzzle {
+    background-repeat: no-repeat;
+    background-color: black;
+    position:absolute;
+}
+
+#timer {
+    font-weight: bold;
+}
+
+#menu_img {
+    width:600px;
+    position: absolute;
+    left: -100px;
+    top:0;
+    background-image: url('img/pic4.jpg'), url('img/pic1.jpg'), url('img/pic2.jpg'), url('img/pic3.jpg'), url('img/pic4.jpg'), url('img/pic1.jpg');
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+    background-size: contain, contain, contain, contain, contain, contain;
+    background-position: 0px, 100px, 200px, 300px, 400px, 500px;
+    height:100px;
+    float:left;
+}
+
+#menu {
+    display:inline-block;
+}
+
+body {
+    text-align: center;
+}
